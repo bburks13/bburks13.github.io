@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+  <title>LeMay America's Car Museum</title>
+</head>
+<body>
+
+  <style>
+      <background-image: class="BackgroundImage" src="ACMbackground.jpeg">
+  </style>
+
+    <div>
+      <p>
+        <a href="https://www.americascarmuseum.org/">
+          <img class="ACMlogo" src="ACMlogo.png" alt="LeMay America's Car Museum Logo Wings">
+        </a>
+        <hr>
+        <p class="DIR">Explore the Museum with the help of these maps. <br> Utilize the buttons below to locate each exhibit and attraction.</p>
+      </p>
+
+      <p class="btnnav">
+        <button class="floor4" id="btnImage1"><b><u>Floor 4</u></b> <br> Main/Plaza Level <br> ACM Store</button>
+        <button class="floor3" id="btnImage2"><b><u>Floor 3</u></b> <br> Admin Offices <br> State Farm Theatre</button>
+        <button class="floor2" id="btnImage3"><b><u>Floor 2</u></b> <br> Banquet/Board Room <br> Speed Zone</button>
+        <button class="floor1" id="btnImage4"><b><u>Floor 1</u></b> <br> Family Zone <br> NAPA Auto Center</button>
+      </p>
+
+      <p class="DIR">SWIPE below to view different maps</p>
+      </p>
+
+      <p class="carousel">
+        <img class="MainImage" src="ACMmainV3.png" alt="LeMay America's Car Museum Map">
+        <img class="MainImage" src="Ramps4_3.png">
+        <img class="MainImage" src="Ramps2_1.png">
+        <img class="MainImage" src="Bathroom Locations.png">
+        
+        <!-- <img src="MainSlow.gif"> -->
+      </p>
+
+
+        <h4>Map Key</h4>
+        <hr>
+        <img class="MapKey" src="ACMmapkey.png" alt="ACM map keys">  
+      <br>
+
+      
+      <section>
+        <h4>TIP</h4>
+        <hr>
+        <p class="TIP">Experience our museum's remarkable car collection by exploring the building like a parking garage. Walk through each floor, taking the right-side ramps. Once you reach the NAPA auto center on the bottom floor, circle upwards using the left ramps. 
+        <br><i>Each ramp is a specially themed exhibit, avoid elevators & stairs to ensure you don't miss any cars.</i></p>
+      </section>
+    </div>
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" src="">
+    <img class="modal-content map-key-img" id="mapKeyImg" src="" alt="ACM map key"> <!-- TESTING -->
+    <p id="modalText"></p> 
+  </div>
+
+  <div class="row">
+    <br>
+    <section class="column"><b>MAKE THE MOST OF YOUR VISIT</b>
+      <hr>
+      <ul>
+        <li>To keep our cars safe, <b>NO TOUCHING</b> except in the Family Zone and Speed Zone</li>
+        <li>We encourage photos, but no selfie sticks, tripods, or large backpacks</li>
+        <li>Our cars are on a strict diet. No food or drink outside of the cafe or store area</li>
+        <li>Video surveillance is in use throughout the Museum</li>
+        <br><br>
+        <li>We strongly recommend you wear a cloth face covering while enjoying our exhibits</li>
+        <li>Please practice social distancing by keeping one car length between you and the group ahead of you</li>
+      </ul>
+      Thank you
+    </section>
+
+    <section class="column"><b>VOLUNTEER</b>
+      <p><i>Join the ACM Crew & Share your Passion!</i></p>
+      <hr>
+      <p>Our volunteers keep ACM running smoothly. Opportunities to get involved include:</p>
+      <ul>
+        <li>Docents/Tour Guides</li>
+        <li>Collections Monitors</li>
+        <li>Speed Zone Pit Crew</li>
+        <li>Photo Car Operators</li>
+        <li>Greeters</li>
+        <li>Event Specialists</li>
+        <li>Museum Educators</li>
+      </ul>
+      <p class="contact"><i>To join our team, stop by the Admin Offices or email us at volunteer@americascarmuseum.org</i></p>
+      <br>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.carousel').slick({
+        dots: false,
+        arrows: false,
+        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+        nextArrow: '<button type="button" class="slick-next">Next</button>',
+      });
+    });
+  </script>
+
+
+</body>
+</html>
